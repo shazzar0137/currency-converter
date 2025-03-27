@@ -46,3 +46,14 @@ convertButton.addEventListener('click', () => {
         
 });
 amount.textContent= " "
+
+// Real-time validation using `input` event listener
+amount.addEventListener('input', () => {
+    const amountValue = parseFloat(amount.value);
+    if (isNaN(amountValue) || amountValue <= 0) {
+        resultDiv.textContent = 'Enter a valid positive number.';
+        resultDiv.style.color = 'gray';
+    } else {
+        resultDiv.textContent = '';
+    }
+});
