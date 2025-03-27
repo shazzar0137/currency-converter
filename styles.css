@@ -2,12 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0056b3;
-    /* background-image: url(./images/currency\ 3.jpg) ;
+    background-image: url(./images/currency\ 3.jpg) ;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
-    min-height: 100vh;   */
+    min-height: 100vh;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,8 +23,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    overflow: hidden; /* Ensure elements do not overflow outside the card */
-    color: white; /* Make text in the card stand out against the dark background */
+    overflow: hidden; 
+    color: white; 
 }
 
 h1, h2 {
@@ -69,4 +68,38 @@ button:hover {
     font-size: 18px;
     color:rgb(34, 205, 171);
     text-align: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 10px 0;
+    background: linear-gradient(45deg, #6c757d, #343a40);
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.05); /* Slightly enlarge the list item on hover */
+    background-color: #495057;
+}
+
+li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
