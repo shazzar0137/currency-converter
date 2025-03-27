@@ -57,3 +57,24 @@ amount.addEventListener('input', () => {
         resultDiv.textContent = '';
     }
 });
+
+// Event delegation for Edit and Delete buttons
+currencyList.addEventListener('click', (event) => {
+    if (event.target.classList.contains('delete')) {
+        // Remove the list item
+        event.target.parentElement.remove();
+    } else if (event.target.classList.contains('edit')) {
+        // Extract data from the entry
+        const listItem = event.target.parentElement;
+        const entryText = listItem.querySelector('span').textContent;
+        const [amountValue, fromCurrencyText, , toCurrencyText] = entryText.split(' ');
+
+        // Pre-fill the input fields
+        amount.value = parseFloat(amountValue);
+        fromCurrency.value = fromCurrencyText;
+        toCurrency.value = toCurrencyText;
+
+        // Remove the list item
+        listItem.remove();
+    }
+});
