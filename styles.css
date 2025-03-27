@@ -2,11 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(./images/currency\ 3.jpg) ;
+    background-color: #0056b3;
+    /* background-image: url(./images/currency\ 3.jpg) ;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
-    min-height: 100vh;  
+    min-height: 100vh;   */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,4 +31,42 @@ body {
 h1, h2 {
     text-align: center;
     color: white;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+input, select, button {
+    width: calc(100% - 10px); /* Prevent overflowing the card width */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    color:rgb(34, 205, 171);
+    text-align: center;
 }
