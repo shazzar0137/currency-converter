@@ -78,3 +78,10 @@ currencyList.addEventListener('click', (event) => {
         listItem.remove();
     }
 });
+
+// Clear history using `dblclick` event listener
+currencyList.addEventListener('dblclick', () => {
+
+    currencyList.innerHTML = '';
+    alert('History cleared!');
+});
