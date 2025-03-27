@@ -103,3 +103,12 @@ li button {
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+.edit-button {
+    background-color: #ffc107;
+    color: #343a40;
+}
+
+.edit-button:hover {
+    background-color: #e0a800;
+    transform: scale(1.1);
+}
