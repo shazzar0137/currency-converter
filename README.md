@@ -59,7 +59,7 @@ The app utilizes the `forEach` method to populate dropdown menus with currency o
 
 ## Live Demo
 
-[View the live demo here]
+View the live demo here; https://shazzar0137.github.io/currency-converter/
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
